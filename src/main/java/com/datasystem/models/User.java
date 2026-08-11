@@ -2,7 +2,7 @@ package com.datasystem.models;
 
 public class User {
 
-    private int id;
+    private Integer idUser;
     private String nameUser;
     private String email;
     private String phoneNumber;
@@ -10,12 +10,12 @@ public class User {
     private String password;
     private String level;
     private String status;
-    private String regiser_by;
+    private String register_by;
 
-    public User(int id, String nameUser, String email, String phoneNumber,
+    public User(Integer idUser, String nameUser, String email, String phoneNumber,
                 String username, String password, String level,
-                String status, String regiser_by) {
-        this.id = id;
+                String status, String register_by) {
+        this.idUser = idUser;
         this.nameUser = nameUser;
         this.email = email;
         this.phoneNumber = phoneNumber;
@@ -23,11 +23,11 @@ public class User {
         this.password = password;
         this.level = level;
         this.status = status;
-        this.regiser_by = regiser_by;
+        this.register_by = register_by;
     }
 
-    public int getId() {
-        return id;
+    public int getIdUser() {
+        return idUser;
     }
 
     public String getNameUser() {
@@ -58,7 +58,7 @@ public class User {
         return status;
     }
 
-    public String getRegiser_by() {
-        return regiser_by;
+    public String getRegister_by() {
+        return register_by;
     }
 }
